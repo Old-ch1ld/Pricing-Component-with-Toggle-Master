@@ -31,7 +31,7 @@ $color-shadow: hsla(237, 63%, 64%, 0.2);
 }
 
 @mixin screen-768 {
-  @media only screen and (max-width: 76.8rem) {
+  @media only screen and (max-width: 768px) {
     @content;
   }
 }
