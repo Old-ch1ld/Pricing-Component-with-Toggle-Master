@@ -190,6 +190,10 @@ body {
           box-shadow: 5px 5px 20px 0px rgba(105, 111, 221, 0.2);
 }
 
+.pricing-card__header {
+  font-size: 1.7rem;
+}
+
 .pricing-card__price {
   color: #494c5f;
   font-size: 7rem;

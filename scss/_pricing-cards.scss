@@ -51,6 +51,10 @@
     box-shadow: 5px 5px 20px 0px $color-shadow;
   }
 
+  &__header {
+    font-size: 1.7rem;
+  }
+
   &__price {
     color: $color-text-price;
     font-size: 7rem;
