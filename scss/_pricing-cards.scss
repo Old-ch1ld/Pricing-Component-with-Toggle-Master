@@ -79,11 +79,11 @@
   &__text {
     width: 100%;
     padding: 1.5rem 0;
-    border-top: 0.15rem solid $color-text-toggle;
+    border-top: 0.15rem solid $color-border;
     text-align: center;
 
     &:last-of-type {
-      border-bottom: 0.1rem solid $color-text-toggle;
+      border-bottom: 0.1rem solid $color-border;
     }
   }
 
