@@ -224,12 +224,12 @@ body {
 .pricing-card__text {
   width: 100%;
   padding: 1.5rem 0;
-  border-top: 0.15rem solid rgba(179, 181, 198, 0.2);
+  border-top: 0.15rem solid rgba(179, 181, 198, 0.6);
   text-align: center;
 }
 
 .pricing-card__text:last-of-type {
-  border-bottom: 0.1rem solid rgba(179, 181, 198, 0.2);
+  border-bottom: 0.1rem solid rgba(179, 181, 198, 0.6);
 }
 
 .pricing-card__btn {
