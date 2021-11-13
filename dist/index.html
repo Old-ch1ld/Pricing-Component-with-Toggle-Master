@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- javascript -->
+    <script defer src="./js/script.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Frontend Mentor | Pricing component with Toggle Master</title>
+  </head>
+  <body>
+    <section class="pricing-component">
+      <h1 class="pricing-component__header">Our Pricing</h1>
+      <div class="pricing-toggle">
+        <p class="pricing-toggle__text pricing-toggle__text--annually">
+          Annually
+        </p>
+
+        <label class="pricing-toggle__btn-switch">
+          <input type="checkbox" class="pricing-toggle__checkbox" />
+          <span class="pricing-toggle__slider"></span>
+        </label>
+
+        <p class="pricing-toggle__text pricing-toggle__text--monthly">
+          Monthly
+        </p>
+      </div>
+
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h3 class="pricing-card__header">Basic</h3>
+          <p class="pricing-card__price pricing-card__price--monthly js-hide">
+            <span class="pricing-card__currency">&dollar;</span>19.99
+          </p>
+          <p class="pricing-card__price pricing-card__price--annually">
+            <span class="pricing-card__currency">&dollar;</span>199.99
+          </p>
+          <p class="pricing-card__text">500 GB Storage</p>
+          <p class="pricing-card__text">2 Users Allowed</p>
+          <p class="pricing-card__text">Send up to 3 GB</p>
+          <button class="pricing-card__btn">Learn More</button>
+        </div>
+        <div class="pricing-card">
+          <h3 class="pricing-card__header">Professional</h3>
+          <p class="pricing-card__price pricing-card__price--monthly js-hide">
+            <span class="pricing-card__currency">&dollar;</span>24.99
+          </p>
+          <p class="pricing-card__price pricing-card__price--annually">
+            <span class="pricing-card__currency">&dollar;</span>249.99
+          </p>
+          <p class="pricing-card__text">1 TB Storage</p>
+          <p class="pricing-card__text">5 Users Allowed</p>
+          <p class="pricing-card__text">Send up to 10 GB</p>
+          <button class="pricing-card__btn">Learn More</button>
+        </div>
+        <div class="pricing-card">
+          <h3 class="pricing-card__header">Master</h3>
+          <p class="pricing-card__price pricing-card__price--monthly js-hide">
+            <span class="pricing-card__currency">&dollar;</span>39.99
+          </p>
+          <p class="pricing-card__price pricing-card__price--annually">
+            <span class="pricing-card__currency">&dollar;</span>399.99
+          </p>
+          <p class="pricing-card__text">2 TB Storage</p>
+          <p class="pricing-card__text">10 Users Allowed</p>
+          <p class="pricing-card__text">Send up to 20 GB</p>
+          <button class="pricing-card__btn">Learn More</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

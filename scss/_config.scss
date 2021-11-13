@@ -1,0 +1,70 @@
+// VARIABLES
+$color-background-main: hsl(240, 78%, 98%);
+$color-background-secondary: hsl(0, 0%, 100%);
+$color-linear-gradient-1: hsl(236, 72%, 79%);
+$color-linear-gradient-2: hsl(237, 63%, 64%);
+$color-linear-gradient-to-bottom-right: linear-gradient(
+  to bottom right,
+  $color-linear-gradient-1,
+  $color-linear-gradient-2
+);
+$color-linear-gradient-to-bottom: linear-gradient(
+  to bottom,
+  $color-linear-gradient-1,
+  $color-linear-gradient-2
+);
+$color-linear-gradient-to-right: linear-gradient(
+  to right,
+  $color-linear-gradient-1,
+  $color-linear-gradient-2
+);
+$color-text-toggle: hsl(234, 14%, 74%);
+$color-text-main: hsl(233, 13%, 49%);
+$color-text-price: hsl(232, 13%, 33%);
+$color-shadow: hsla(237, 63%, 64%, 0.2);
+
+// MIXINS
+@mixin screen-1024 {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin screen-768 {
+  @media only screen and (max-width: 76.8rem) {
+    @content;
+  }
+}
+
+@mixin screen-576 {
+  @media only screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+// SET UP
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $color-background-main;
+  background-image: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}

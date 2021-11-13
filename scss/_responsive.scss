@@ -1,0 +1,44 @@
+@include screen-1024 {
+  body {
+    height: initial;
+  }
+  .pricing-component {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 7rem 2rem;
+  }
+
+  .pricing-toggle {
+    width: 100%;
+    justify-content: center;
+    margin: 4rem 0 8rem;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+  }
+
+  .pricing-card {
+    max-width: 80%;
+    width: 45rem;
+
+    &:first-of-type {
+      margin-bottom: 3rem;
+    }
+
+    &:nth-of-type(2) {
+      padding: 3.5rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+@include screen-576 {
+  .pricing-card {
+    max-width: 100%;
+
+    &:nth-of-type(2) {
+      background-image: $color-linear-gradient-to-bottom;
+    }
+  }
+}

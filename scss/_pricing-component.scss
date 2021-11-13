@@ -1,0 +1,14 @@
+.pricing-component {
+  height: 100%;
+  width: 100%;
+  max-width: 105rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  &__header {
+    color: $color-text-main;
+    font-size: 3.3rem;
+  }
+}
